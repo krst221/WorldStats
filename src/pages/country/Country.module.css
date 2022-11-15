@@ -82,11 +82,12 @@
   
   .details_panel_label {
     color: var(--text-secondary);
+    width: 65%;
   }
   
   .details_panel_value {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
   }
   
   .details_panel_value img {

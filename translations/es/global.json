@@ -1,0 +1,21 @@
+{
+    "search": {
+        "found": "Se han encontrado",
+        "countries": "países",
+        "placeholder": "Filtra por Nombre, Región or Subregión"
+    },
+
+    "tags": {
+        "name": "Nombre",
+        "population": "Población"
+    },
+
+    "country": {
+        "area": "Superficie",
+        "details": "Detalles",
+        "subregion": "Subregión",
+        "borders": "Fronteras",
+        "coat": "Escudo de armas",
+        "timezone": "Franja horaria"
+    }
+}

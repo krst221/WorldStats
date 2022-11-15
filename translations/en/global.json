@@ -1,0 +1,21 @@
+{
+    "search": {
+        "found": "Found",
+        "countries": "countries",
+        "placeholder": "Filter by Name, Region or Subregion"
+    },
+
+    "tags": {
+        "name": "Name",
+        "population": "Population"
+    },
+
+    "country": {
+        "area": "Area",
+        "details": "Details",
+        "subregion": "Subregion",
+        "borders": "Borders",
+        "coat": "Coat of arms",
+        "timezone": "Timezone"
+    }
+}

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import styles from './CountriesTable.module.css'
 import KeyboardArrowDownRounded from '@mui/icons-material/KeyboardArrowDownRounded'
 import KeyboardArrowUpRounded from '@mui/icons-material/KeyboardArrowUpRounded'
+import { useTranslation } from "react-i18next";
 import Link from 'next/link';
 
 const orderBy = (countries, value, direction) => {
@@ -29,6 +30,7 @@ const CountriesTable = ({ countries }) => {
   const [direction, setDirection] = useState();
   const [value, setValue] = useState();
   const orderedCountries = orderBy(countries, value, direction);
+  const [t, i18n] = useTranslation('global');
 
   const switchDirection = () => {
     if (!direction) setDirection('desc');
@@ -46,10 +48,10 @@ const CountriesTable = ({ countries }) => {
     <div>
       <div className={styles.heading}>
         <button className={styles.heading_name} onClick={() => setValueAndDirection('name')}>
-          <div>Name</div>
+          <div>{t('tags.name')}</div>
         </button>
         <button className={styles.heading_population} onClick={() => setValueAndDirection('population')}>
-          <div>Population</div>
+          <div className={styles.tag}>{t('tags.population')}</div>
           <SortArrow direction={direction} />
         </button>
       </div>
@@ -58,7 +60,7 @@ const CountriesTable = ({ countries }) => {
         <Link key={country.name.common} href={`country/${country.name.common}`}>
           <div className={styles.row} key={country.name.official}>
             <div className={styles.name}>{country.name.common}</div>
-            <div className={styles.population}>{country.population}</div>
+            <div className={styles.population}>{country.population.toLocaleString()}</div>
           </div>
         </Link>
       ))}

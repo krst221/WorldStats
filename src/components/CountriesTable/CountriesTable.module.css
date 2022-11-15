@@ -23,6 +23,11 @@
     text-align: left;
     justify-content: flex-start;
   }
+
+  .tag {
+    margin: 0px 20.5vw;
+  }
+
   .row {
     display: flex;
     padding: 20px;

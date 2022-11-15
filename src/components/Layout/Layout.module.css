@@ -12,6 +12,10 @@
     align-items: center;
     margin: 32px;
   }
+
+  .header img {
+    margin: 0px 20px;
+  }
   
   .footer {
     margin-top: 32px;
@@ -20,6 +24,7 @@
   }
 
   .themeSwitcher {
+    cursor: pointer;
     border: none;
     background-color: transparent;
     padding: 0;
