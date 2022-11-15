@@ -1,0 +1,16 @@
+.container {
+  text-align: inherit;
+}
+
+.main {
+  text-align: inherit;
+}
+
+.footer {
+  text-align: inherit;
+}
+
+.counts {
+  margin: 12px 0;
+  color: var(--text-color-secondary);
+}
